@@ -1,0 +1,45 @@
+
+/*header*/
+/*By default, the header should have a linear gradient background*/
+header{
+    background: linear-gradient(90deg, #A3A5A8 10%, #E6E7E8 90%);
+    color: black;
+    height: 9rem;
+    padding-top:0.25rem;
+    padding-left:0.5rem;
+}
+
+/*By default the text should have a font weight of 300 and
+ be 300% larger than the normal font size. */
+header div h1{
+    font-weight: 300;
+    font-size: 300%;
+    margin:0px;
+}
+/*tagline font size */
+header div p.tagline{
+    font-size: 120%;
+   
+}
+
+/*-----------Settings for screen width > 768px-----------*/
+@media (min-width: 768px) {
+    /*On screens 768px and wider, constrain the width of these elements to 750px*/
+    /*.container {
+        width: 750px;
+    }*/
+    
+    header{
+        /*On screens 768px and wider, the header background should switch to the background image */
+        background-image: url(../images/book_4.jpg);
+        /*The background image should cover the entire header element*/
+        background-size: cover;
+        /*background image positioned in the right and bottom corner of the element*/
+        background-position: bottom 0px right 0px;
+        /*make header taller*/       
+        height:25rem;
+        color: black;
+        /*add 100px of padding to the top of the header element on screens of 768px*/
+        padding-top:250px;
+    }
+}
